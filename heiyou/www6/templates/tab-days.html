@@ -1,0 +1,21 @@
+<ion-view view-title="30 Days Project Our Love">
+  <ion-content class="padding">
+  
+<a>
+   <b href="http://sarasoueidan.com/blog/windows8-animations/" class="tutorial-link" >Especially For You</b>
+ </a>
+
+    <ion-list style="top:90px;">
+      <ion-item class="item-remove-animate item-icon-right bounce-in" ng-repeat="day in days" type="item-text-wrap" href="#/tab/days/{{day.id}}">
+        <h2>{{day.day}}</h2>
+        <p>{{day.date}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(day)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>

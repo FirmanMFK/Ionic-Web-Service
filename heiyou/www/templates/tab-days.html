@@ -1,0 +1,15 @@
+<ion-view view-title="ALBUM">
+  <ion-content class="padding">
+  
+<br>
+  <div class="gallery-container">
+<a class="album-link" ng-repeat="tambah_lagu in tambah_lagu" type="item-text-wrap" href="#/tab/days/{{tambah_lagu.id}}">
+     <div class="album-link-content">
+       <div class="album-thumb" style="background:url({{tambah_lagu.image}});"></div>
+        <p> <span class="album-desc" style="font-size: 15px;">{{tambah_lagu.artist}}</span></p>
+        <p> <span class="album-title">{{tambah_lagu.namelagu}}</span></p> 
+    </div>
+</a>
+</div>
+  </ion-content>
+</ion-view>

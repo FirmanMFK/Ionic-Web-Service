@@ -1,0 +1,37 @@
+<ion-view view-title="Edit">
+  <ion-content class="padding">
+ <h1 class="title">Edit Music</h1>
+
+      <form>
+                    <div class="list">
+                        <label class="item item-input">
+                        <span class="input-label">id :</span>
+                            <input type="text" placeholder="{{tambah_lagu.id}}" ng-model="id" value="{{tambah_lagu.id}}" init-from-form>
+                        </label>
+                        <label class="item item-input">
+                        <span class="input-label">Nama Penyanyi :</span>
+                            <input type="text" placeholder="{{tambah_lagu.artist}}" ng-model="artist" value="{{tambah_lagu.artist}}" init-from-form>
+                        </label>
+                        <label class="item item-input">
+                        <span class="input-label">Gambar Album :</span>
+                            <input type="text" placeholder="{{tambah_lagu.image}}" ng-model="image" value="{{tambah_lagu.image}}" init-from-form>
+                        </label>
+                        <label class="item item-input">
+                        <span class="input-label">Lagu :</span>
+                            <input type="text" placeholder="{{tambah_lagu.url}}" ng-model="url" value="{{tambah_lagu.url}}" init-from-form>
+                        </label>
+                        <label class="item item-input">
+                        <span class="input-label">Nama Lagu</span>
+                            <input type="text" placeholder="{{tambah_lagu.namelagu}}" ng-model="namelagu" value="{{tambah_lagu.namelagu}}" init-from-form>
+                        </label>
+                        <label class="item item-input">
+                        <span class="input-label">Lirik :</span>
+                            <input type="text" placeholder="{{tambah_lagu.lirik}}" ng-model="lirik" value="{{tambah_lagu.lirik}}" init-from-form>
+                        </label>
+                        <button class="button button-positive button-block" ng-click="edit(id,artist,image,url,namelagu,lirik);">
+                            Update
+                        </button>
+                    </div>
+                </form>>
+  </ion-content>
+  </ion-view>

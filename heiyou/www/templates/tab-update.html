@@ -1,0 +1,37 @@
+<ion-view view-title="Edit">
+  <ion-content class="padding">
+ <h1 class="title">Edit Music</h1>
+      <form>
+                    <div class="list">
+                        <label class="item item-input">
+                        <span class="input-label">ID :</span>
+                            <input type="text" placeholder="{{dataproperti.properti_id}}" ng-model="properti_id" value="{{dataproperti.properti_id}}" init-from-form>
+                            <p>{{datateman.id}}</p>
+                        </label>
+                        <label class="item item-input">
+                        <span class="input-label">Nama Properti :</span>
+                            <input type="text" placeholder="{{dataproperti.properti_nama}}" ng-model="properti_nama" value="{{dataproperti.properti_nama}}" init-from-form>
+                        </label>
+                        <label class="item item-input">
+                        <span class="input-label">Jumlah Properti :</span>
+                            <input type="text" placeholder="{{dataproperti.properti_jumlah}}" ng-model="properti_jumlah" value="{{dataproperti.properti_jumlah}}" init-from-form>
+                        </label>
+                        <label class="item item-input">
+                        <span class="input-label">Jenis Properti :</span>
+                            <input type="text" placeholder="{{dataproperti.properti_jenis}}" ng-model="properti_jenis" value="{{dataproperti.properti_jenis}}" init-from-form>
+                        </label>
+                        <label class="item item-input">
+                        <span class="input-label">Status Properti</span>
+                            <input type="text" placeholder="{{dataproperti.properti_status}}" ng-model="properti_status" value="{{dataproperti.properti_status}}" init-from-form>
+                        </label>
+                        <label class="item item-input">
+                        <span class="input-label">Gambar Properti :</span>
+                            <input type="text" placeholder="{{dataproperti.properti_gambar}}" ng-model="properti_gambar" value="{{dataproperti.properti_gambar}}" init-from-form>
+                        </label>
+                        <button class="button button-positive button-block" ng-click="edit(properti_id,properti_nama,properti_jumlah,properti_jenis,properti_status,properti_gambar);">
+                            Save
+                        </button>
+                    </div>
+                </form>
+  </ion-content>
+  </ion-view>

@@ -1,0 +1,94 @@
+
+<ion-view view-title="Music" style="background: url(img/bgwa1.png);background-size: cover; ">
+  <ion-content>
+<div class="accordian">
+  <ul>
+    <li>
+      <div class="image_title">
+        <a href="#">Wedding 1</a>
+      </div>
+      <a href="#">
+        <img src="img/1.jpg">
+    </a>
+    </li>
+       <li>
+      <div class="image_title">
+        <a href="#">Wedding 2</a>
+      </div>
+      <a href="#">
+     <img src="img/2.jpg">
+      </a>
+    </li>
+          <li>
+      <div class="image_title">
+        <a href="#">Wedding 3</a>
+      </div>
+      <a href="#">
+     <img src="img/3.jpg">
+      </a>
+    </li>
+             <li>
+      <div class="image_title">
+        <a href="#">Love</a>
+      </div>
+      <a href="#">
+         <img src="img/love.jpg" style="width:500px; height:335px;">
+      </a>
+    </li>
+      <li>
+      <div class="image_title">
+        <a href="#">Good Friends is your beside </a>
+      </div>
+      <a href="#">
+     <img src="img/teman.jpg" style="width:500px; height:335px;">
+      </a>
+    </li>
+    
+    </div>
+  </ul>
+</div>
+<div id="wrapper">
+<div class="text center" >
+<audio style="width:700px;" controls id="myAudio"
+  src="{{fileaudio}}">
+Your user agent does not support the HTML5 Audio element.
+</audio>
+</div>
+<!--
+<button ng-click= "playWebAudioLoop()">playy</button>
+
+<button type="button" ng-click = "pp();">Play/Pause</button>-->
+
+  <ion-list style="top:90px;">
+      <ion-item class="playlist" ng-repeat = "item in listaudio" type="item-text-wrap" ng-click = "playpause(item.url)">
+        <h2>{{item.id}}.{{item.name}}</h2>
+        <div class="plLength">{{item.time}}</div>
+                      
+      </ion-item>
+    </ion-list>
+</div>
+
+  <!--<div id="wrapper">
+<audio id="mejs" src="http://mediaelementjs.com/media/AirReview-Landmarks-02-ChasingCorporate.mp3" type="audio/mp3" controls="controls" style="width:900px;"></audio>
+<ul class="mejs-list">
+        <li  class="current"  data-url="http://mediaelementjs.com/media/AirReview-Landmarks-02-ChasingCorporate.mp3">Air Review - Chasing Corporate</li>
+         <li data-url="http://k003.kiwi6.com/hotlink/9ucf2r3yo6/chasing_cars_cover_chris_-_for_hollie_s_cover.mp3">Chasing Cars (Piano)</li>
+
+      <li data-url="http://mediaelementjs.com/media/AirReview-Landmarks-04-AllBecauseYoureMine.mp3">Air Review - All Because You're Mine</li>
+    <li data-url="http://k004.kiwi6.com/hotlink/vvy55kc7c5/new_distance.mp3">SmallCityLights - New Distance</li>
+    <li data-url="http://k004.kiwi6.com/hotlink/elg59wu4yk/SKiLTRaX_-_Sunny_Day" ng-click = "thisplay(data-url)">Sunny Day</li>
+</ul>
+</div>-->
+    <!--<a id="play-video" href="#">Play Video</a><br />
+ 
+<iframe id="video" width="420" height="315" src="//www.youtube.com/embed/b0stFApxBA8/" frameborder="0" allowfullscreen></iframe>
+    <ion-toggle  ng-model="settings.enableFriends">
+        Enable Friends
+    </ion-toggle>
+  <H5> Playlist </H5>
+  <ion-list style="top:90px;">
+   <ion-item class="item-remove-animate item-icon-right bounce-in" ng-repeat="play in plays" type="item-text-wrap" href="#/tab/login/{{play.id}}">
+        <h2 href="{{play.url}}">{{play.name}}</h2>
+      </ion-item>-->
+  </ion-content>
+</ion-view>

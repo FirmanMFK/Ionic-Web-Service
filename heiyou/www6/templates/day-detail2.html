@@ -1,0 +1,124 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data-->
+
+
+<head>
+<!-- Material Design Lite-->
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
+  <!-- Material Design icon font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <div class="container">
+<aside class="profile-card" >
+  <header>
+      <div class="mdl-card__media text"><img src="{{day.face}}" style=" width:100%; height:330px;">
+      </div>
+
+    <p    style="text-align: justify; text-justify: inter-word;">{{day.lastText}}</p>
+  </header>
+</aside>
+
+</body>
+
+
+</html>
+<!--
+<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.indigo-pink.min.css">
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<div class="wrapper" id="wrapper-mdl">
+  <h1>MDL</h1>
+  <table>
+    <tr>
+      <td>
+        <div class="mdl-card mdl-shadow--2dp demo-card-square">
+          <div class="mdl-card__title mdl-card--expand">
+            <h2 class="mdl-card__title-text">Update</h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenan convallis.
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      View Updates
+    </a>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="mdl-card mdl-shadow--2dp demo-card-image">
+          <div class="mdl-card__title mdl-card--expand"></div>
+          <div class="mdl-card__actions">
+            <span class="demo-card-image__filename">Image.jpg</span>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="mdl-card mdl-shadow--2dp demo-card-event">
+          <div class="mdl-card__title mdl-card--expand">
+            <h4>
+      Featured event:<br>
+      May 24, 2016<br>
+      7-11pm
+    </h4>
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Add to Calendar
+    </a>
+            <div class="mdl-layout-spacer"></div>
+            <i class="material-icons">event</i>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="wrapper" id="wrapper-bootstrap">
+  <h1>Bootstrap</h1>
+  <table>
+<div class="text left" >
+<div class="material-contact animate-in-card">
+image 
+      <img class="animate-in-image" ng-src="{{chat.face}}">
+      <!-- name
+      <h1 class="animate-in-01">{{day.day}}</h1>
+      <!-- title 
+      <h2 class="animate-in-02">{{day.status}}</h2>
+      <hr class="animate-in-03">
+
+      <!-- bio
+      <p class="animate-in-04"> {{day.lastText}}</p>
+
+      <!-- contact links 
+      <span class="actions animate-in-05">
+
+                <a class="{{chat.facebook}}" target="_blank">Facebook</a>
+                <a href="{{chat.line}}" target="_blank">Line</a>
+                <a href="{{chat.instagram}}" target="_blank">Instagram</a>
+
+            </span>
+
+</div>
+</div>
+  </table>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+
+  </ion-content>
+</ion-view>
+

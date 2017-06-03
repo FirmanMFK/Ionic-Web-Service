@@ -1,0 +1,32 @@
+<ion-view view-title="ALBUM">
+  <ion-content class="padding">
+ <h1 class="title">Create New Musik</h1>
+     <div class="list">
+    <label class="item item-input item-stacked-label">
+       <span class="input-label">Nama Penyanyi</span>
+      <input type="text" ng-model="tambah_lagu.artist" placeholder="Masukkan Nama Penyanyi">
+    </label>
+
+    <label class="item item-input item-stacked-label">
+      <span class="input-label">Cover</span>
+      <input type="text" ng-model="tambah_lagu.image" placeholder="Masukkan Cover Musik">
+    </label>
+
+    <label class="item item-input item-stacked-label">
+      <span class="input-label">Judul Lagu</span>
+      <input type="text" ng-model="tambah_lagu.namelagu" placeholder="Masukkan judul Lagu">
+    </label>
+       <label class="item item-input item-stacked-label">
+      <span class="input-label">Url Lagu</span>
+      <input type="text" ng-model="tambah_lagu.url" placeholder="Masukkan Url Musik">
+    </label>
+      <label class="item item-input item-stacked-label">
+      <span class="input-label">Lirik Lagu</span>
+      <input type="text" ng-model="tambah_lagu.lirik" placeholder="Masukkan Url Musik">
+    </label>
+    <button class="button button-positive button-block" ng-click="simpan(thread);">
+      Save
+        </button>
+  </div>
+  </ion-content>
+  </ion-view>

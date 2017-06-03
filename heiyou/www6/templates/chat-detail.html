@@ -1,0 +1,36 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="{{chat.name}}">
+  <ion-content class="padding" style="background: url(img/bgwa2.jpg);background-size: cover; ">
+<div class="text left" >
+<div class="material-contact animate-in-card">
+
+      <!-- image -->
+      <img class="animate-in-image" src="{{chat.face}}">
+      <!-- name -->
+      <h1 class="animate-in-01">{{chat.name}}</h1>
+      <!-- title -->
+      <h2 class="animate-in-02">{{chat.status}}</h2>
+      <hr class="animate-in-03">
+
+      <!-- bio -->
+      <p class="animate-in-04"> {{chat.lastText}}</p>
+
+      <!-- contact links -->
+      <span class="actions animate-in-05">
+
+                <a class="{{chat.facebook}}" target="_blank">Facebook</a>
+                <a href="{{chat.line}}" target="_blank">Line</a>
+                <a href="{{chat.instagram}}" target="_blank">Instagram</a>
+
+            </span>
+
+</div>
+</div>
+  </ion-content>
+</ion-view>
+
